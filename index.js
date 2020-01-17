@@ -85,11 +85,12 @@ const person = {
  *         where `{name}` is the name passed into `makeSmartPerson`.
 */
 function makeSmartPerson(name) {
-  return{
-    name: 'Sam',
+  const smartPerson = {
+    'name': name,
     sum: (num1, num2) => (num1 + num2),
-    speak: () => 'Hello, my name is ${name}'
+    speak: () => `Hello, my name is ${name}`
   }
+  return smartPerson;
 }
 
 
